@@ -1,4 +1,4 @@
-## SSL_HAAR_Model (v.0.5)
+## HAAR_DeepModel (v.0.5)
 
 여객의 이상행동을 탐지하기 위한 모델 구축.
 
