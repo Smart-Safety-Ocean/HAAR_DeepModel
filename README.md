@@ -31,7 +31,7 @@
   </a>
 <h1 align="center"> HAAR_DeepModel (v.0.5) </h1>
 
-<h3 align="center">Open Source Algorithm for detecting ship passengers’ abnormal behaviors and fall accidents</h3>
+<h3 align="center">Open Source Algorithm For Detecting Ship Passengers’ Abnormal Behaviors And Fall Accidents</h3>
 
   <p align="center">
     Preventing accident on ship and alert for help is the goal for the detection algorithm. Prevent more accidents, save more lives. 
