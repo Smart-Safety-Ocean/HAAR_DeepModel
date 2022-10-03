@@ -13,6 +13,8 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -47,6 +49,13 @@
   </p>
 </div>
 
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/20548632/193512190-636df804-0869-48a2-a6de-fc220ef0d411.gif" alt="animated" />
+</p>
+
+
+<!-- ![modelDemoGif](https://user-images.githubusercontent.com/20548632/193512190-636df804-0869-48a2-a6de-fc220ef0d411.gif)-->
 
  
 <!-- TABLE OF CONTENTS -->
