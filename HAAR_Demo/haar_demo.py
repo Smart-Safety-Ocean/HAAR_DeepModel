@@ -83,6 +83,9 @@ if __name__ == "__main__":
     for vis_frame in tqdm.tqdm(demo.run_on_video(video, speedValue=args.speed), total=num_frames):
         cv2.namedWindow(basename, cv2.WINDOW_NORMAL)
         cv2.resizeWindow(basename, width=1280, height=720)
+        textLocationFPS = (50,30)
+        cv2.putText(vis_frame,"FPS : "+str(frames_per_second),
+                    fontFace=cv2.FONT_HERSHEY_DUPLEX,fontScale=1.0,color=(0,0,0),org=textLocationFPS)
         cv2.imshow(basename, vis_frame)
         if cv2.waitKey(1) == 27:
             break  # esc to quit
