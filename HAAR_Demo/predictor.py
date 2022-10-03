@@ -101,7 +101,7 @@ class VisualizationDemo(object):
             axes[i // 2][i % 2].imshow(basis_viz)
         plt.show()
 
-    def run_on_video(self, video):
+    def run_on_video(self, video, speedValue = 1):
         """
         Visualizes predictions on frames of the input video.
 
@@ -141,7 +141,7 @@ class VisualizationDemo(object):
 
             for cnt, frame in enumerate(frame_gen):
                 #입력 프레임수 조
-                if(cnt % 7 == 0):
+                if(cnt % speedValue == 0):
                     frame_data.append(frame)
                     self.predictor.put(frame)
 

@@ -33,10 +33,10 @@ def setup_cfg(args):
 
 
 def get_parser():
-    parser = argparse.ArgumentParser(description="Detectron2 Demo")
+    parser = argparse.ArgumentParser(description="HAAR Demo")
     parser.add_argument(
         "--config-file",
-        default="/media/hongss/T7/SSL_HAAR_Model/AdelaiDet/configs/FCPose/R_50_3X.yaml",
+        default="/media/hongss/T7/HAAR_DeepModel/AdelaiDet/configs/FCPose/R_50_3X.yaml",
         metavar="FILE",
         help="path to config file",
     )
@@ -46,6 +46,12 @@ def get_parser():
         type=float,
         default=0.3,
         help="Minimum score for instance predictions to be shown",
+    )
+    parser.add_argument(
+        "--speed",
+        type=int,
+        default=2,
+        help="Do inference per number of frame",
     )
     parser.add_argument(
         "--opts",
@@ -74,7 +80,7 @@ if __name__ == "__main__":
     num_frames = int(video.get(cv2.CAP_PROP_FRAME_COUNT))
     basename = WINDOW_NAME + " : " + os.path.basename(args.video_input)
     assert os.path.isfile(args.video_input)
-    for vis_frame in tqdm.tqdm(demo.run_on_video(video), total=num_frames):
+    for vis_frame in tqdm.tqdm(demo.run_on_video(video, speedValue=args.speed), total=num_frames):
         cv2.namedWindow(basename, cv2.WINDOW_NORMAL)
         cv2.resizeWindow(basename, width=1280, height=720)
         cv2.imshow(basename, vis_frame)
