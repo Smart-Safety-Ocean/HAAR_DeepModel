@@ -41,8 +41,9 @@
     <a href="https://github.com/Arakim44/HAAR_DeepModel"><strong>Explore the docs »</strong></a>
     <br />
     <br />
+    <!--
     <a href="https://github.com/Arakim44/HAAR_DeepModel">View Demo</a>
-    ·
+    · -->
     <a href="https://github.com/Arakim44/HAAR_DeepModel/issues">Report Bug</a>
     ·
     <a href="https://github.com/Arakim44/HAAR_DeepModel/issues">Request Feature</a>
