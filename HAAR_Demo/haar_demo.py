@@ -150,7 +150,7 @@ def get_parser():
     parser.add_argument(
         "--detection-mode",
         default="object",
-        help="select detection mode = object or key-point"
+        help="select detection mode = 'fcos' or 'boxinst' or 'key-point'"
     )
     parser.add_argument("--video-input", help="Path to video file.")
     parser.add_argument(
@@ -177,7 +177,12 @@ def get_parser():
 if __name__ == "__main__":
     mp.set_start_method("spawn", force=True)
     args = get_parser().parse_args()
-
+    if(args.detection_mode == "key-point"):
+        args.opts = "MODEL.WEIGHTS ../models_weight/keypointdetection/fcpose.pth"
+    elif (args.detection_mode == "fcos"):
+        args.opts = "MODEL.WEIGHTS ../models_weight/objectdetection/fcos.pth"
+    elif (args.detection_mode == "boxinst"):
+        args.opts = "MODEL.WEIGHTS ../models_weight/objectdetection/boxinst.pth"
     logger = setup_logger()
     logger.info("Arguments: " + str(args))
 
