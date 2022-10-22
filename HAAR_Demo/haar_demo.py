@@ -152,6 +152,10 @@ def get_parser():
         default="object",
         help="select detection mode = 'fcos' or 'boxinst' or 'key-point'"
     )
+    parser.add_argument(
+        "--video-dirinput",
+        help="Path to video files directory.."
+    )
     parser.add_argument("--video-input", help="Path to video file.")
     parser.add_argument(
         "--confidence-threshold",
