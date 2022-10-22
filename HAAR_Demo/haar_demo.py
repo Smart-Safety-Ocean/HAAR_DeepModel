@@ -119,7 +119,15 @@ WINDOW_NAME = "HAAR DETECTION RESULT"
 def setup_cfg(args):
     # load config from file and command-line arguments
     cfg = get_cfg()
-    cfg.merge_from_file(args.config_file)
+    if(args.detection_mode == "key-point"):
+        args.config_file = "/media/hongss/T7/HAAR_DeepModel/AdelaiDet/configs/FCPose/R_50_3X.yaml"
+        cfg.merge_from_file(args.config_file)
+    elif (args.detection_mode == "FCOS"):
+        args.config_file = "/media/hongss/T7/HAAR_DeepModel/AdelaiDet/configs/FCOS-Detection/MS_R_101_2x.yaml"
+        cfg.merge_from_file(args.config_file)
+    elif (args.detection_mode == "BoxInst"):
+        args.config_file = "/media/hongss/T7/HAAR_DeepModel/AdelaiDet/configs/BoxInst/MS_R_101_3x.yaml"
+        cfg.merge_from_file(args.config_file)
     cfg.merge_from_list(args.opts)
     # Set score_threshold for builtin models
     cfg.MODEL.RETINANET.SCORE_THRESH_TEST = args.confidence_threshold
@@ -169,6 +177,7 @@ def get_parser():
 if __name__ == "__main__":
     mp.set_start_method("spawn", force=True)
     args = get_parser().parse_args()
+
     logger = setup_logger()
     logger.info("Arguments: " + str(args))
 
