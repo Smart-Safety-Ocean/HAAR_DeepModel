@@ -193,23 +193,48 @@ if __name__ == "__main__":
     cfg = setup_cfg(args)
 
     demo = VisualizationDemo(cfg)
-
-   #VIDEO INPUT -> OUTPUT WINDOWS
-    video = cv2.VideoCapture(args.video_input)
-    width = int(video.get(cv2.CAP_PROP_FRAME_WIDTH))
-    height = int(video.get(cv2.CAP_PROP_FRAME_HEIGHT))
-    frames_per_second = video.get(cv2.CAP_PROP_FPS)
-    num_frames = int(video.get(cv2.CAP_PROP_FRAME_COUNT))
-    basename = WINDOW_NAME + " : " + os.path.basename(args.video_input)
-    assert os.path.isfile(args.video_input)
-    for vis_frame in tqdm.tqdm(demo.run_on_video(video, speedValue=args.speed), total=num_frames):
-        cv2.namedWindow(basename, cv2.WINDOW_NORMAL)
-        cv2.resizeWindow(basename, width=1280, height=720)
-        textLocationFPS = (50,30)
-        cv2.putText(vis_frame,"FPS : "+str(frames_per_second),
-                    fontFace=cv2.FONT_HERSHEY_DUPLEX,fontScale=1.0,color=(0,0,0),org=textLocationFPS)
-        cv2.imshow(basename, vis_frame)
-        if cv2.waitKey(1) == 27:
-            break  # esc to quit
-    video.release()
-    cv2.destroyAllWindows()
+    if args.video_input:
+       #VIDEO INPUT -> OUTPUT WINDOWS
+        video = cv2.VideoCapture(args.video_input)
+        width = int(video.get(cv2.CAP_PROP_FRAME_WIDTH))
+        height = int(video.get(cv2.CAP_PROP_FRAME_HEIGHT))
+        frames_per_second = video.get(cv2.CAP_PROP_FPS)
+        num_frames = int(video.get(cv2.CAP_PROP_FRAME_COUNT))
+        basename = WINDOW_NAME + " : " + os.path.basename(args.video_input)
+        assert os.path.isfile(args.video_input)
+        for vis_frame in tqdm.tqdm(demo.run_on_video(video, speedValue=args.speed), total=num_frames):
+            cv2.namedWindow(basename, cv2.WINDOW_NORMAL)
+            cv2.resizeWindow(basename, width=1280, height=720)
+            textLocationFPS = (50,30)
+            cv2.putText(vis_frame,"FPS : "+str(frames_per_second),
+                        fontFace=cv2.FONT_HERSHEY_DUPLEX,fontScale=1.0,color=(0,0,0),org=textLocationFPS)
+            cv2.imshow(basename, vis_frame)
+            if cv2.waitKey(1) == 27:
+                break  # esc to quit
+        video.release()
+        cv2.destroyAllWindows()
+    elif args.video_inputdir:
+        file_list = os.listdir(args.video_inputdir)
+        file_list_py = [file for file in file_list if file.endswith('.avi') or file.endswith('.AVI')
+                        or file.endswith('.mov') or file.endswith('.MOV')
+                        or file.endswith('.mp4') or file.endswith('.MP4')]
+        file_list_py.sort()
+        for filename in file_list_py:
+            video = cv2.VideoCapture(args.video_input + filename)
+            width = int(video.get(cv2.CAP_PROP_FRAME_WIDTH))
+            height = int(video.get(cv2.CAP_PROP_FRAME_HEIGHT))
+            frames_per_second = video.get(cv2.CAP_PROP_FPS)
+            num_frames = int(video.get(cv2.CAP_PROP_FRAME_COUNT))
+            basename = WINDOW_NAME + " : " + os.path.basename(args.video_input)
+            assert os.path.isfile(args.video_input)
+            for vis_frame in tqdm.tqdm(demo.run_on_video(video, speedValue=args.speed), total=num_frames):
+                cv2.namedWindow(basename, cv2.WINDOW_NORMAL)
+                cv2.resizeWindow(basename, width=1280, height=720)
+                textLocationFPS = (50, 30)
+                cv2.putText(vis_frame, "FPS : " + str(frames_per_second),
+                            fontFace=cv2.FONT_HERSHEY_DUPLEX, fontScale=1.0, color=(0, 0, 0), org=textLocationFPS)
+                cv2.imshow(basename, vis_frame)
+                if cv2.waitKey(1) == 27:
+                    break  # esc to quit
+            video.release()
+            cv2.destroyAllWindows()
