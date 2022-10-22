@@ -95,6 +95,7 @@
 
 Open Source CCTV based AI algorithm which detects the abnormal behaviors of passengers on the ship to predict the possible accidents and warn the on board sailors. When the CCTV catches the actual accidents, the algorithm will alert the incidents and the current accident location to nearby coast guards in real time in order to increase the rescue rate for the fallen passengers.
 
+We defined activity of ship-passenger.<br>[Walking, Move-Over, Standing ... ]
 <!--Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`-->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -112,9 +113,14 @@ Open Source CCTV based AI algorithm which detects the abnormal behaviors of pass
 * AdelaiDet
   * Detectron2 base
   * See [AedlaiDet Install.md](https://github.com/aim-uofa/AdelaiDet)
-  * FCPose
+  * FCPose, FCOS-Detection, Boxinst
 
 [Download pretrain Model](https://github.com/aim-uofa/AdelaiDet/blob/master/configs/FCPose/README.md)
+
+[Download pretrain Model : FCOS](https://drive.google.com)
+
+[Download pretrain Model : Boxinst](https://drive.google.com)
+
 
 
 <!--
