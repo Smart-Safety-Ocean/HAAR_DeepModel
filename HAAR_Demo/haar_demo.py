@@ -238,3 +238,5 @@ if __name__ == "__main__":
                     break  # esc to quit
             video.release()
             cv2.destroyAllWindows()
+
+    print("Detection End!!")
