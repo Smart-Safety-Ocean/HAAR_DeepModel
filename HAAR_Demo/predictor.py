@@ -148,6 +148,7 @@ class VisualizationDemo(object):
                     if cnt >= buffer_size:
                         frame = frame_data.popleft()
                         predictions = self.predictor.get()
+                        print("frame count : " + str(cnt))
                         yield process_predictions(frame, predictions)
 
             while len(frame_data):
