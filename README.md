@@ -116,11 +116,11 @@ We defined activity of ship-passenger. (normal, abnormal) <br>
   * See [AedlaiDet Install.md](https://github.com/aim-uofa/AdelaiDet)
   * FCPose, FCOS-Detection, Boxinst
 
-[Download pretrain Model](https://github.com/aim-uofa/AdelaiDet/blob/master/configs/FCPose/README.md)
+[Download pretrain Model : Key-Point](https://dl.fbaipublicfiles.com/detectron2/COCO-Keypoints/keypoint_rcnn_R_50_FPN_3x/137849621/model_final_a6e10b.pkl)
 
-[Download pretrain Model : FCOS](https://drive.google.com)
+[Download pretrain Model : Faster-RCNN](https://drive.google.com)
 
-[Download pretrain Model : Boxinst](https://drive.google.com)
+[Download pretrain Model : Retinanet](https://drive.google.com)
 
 
 
@@ -148,11 +148,11 @@ We defined activity of ship-passenger. (normal, abnormal) <br>
 The model can be started by executing haar_demo.py in /HAAR_Demo directory.
 
 
-[Sample Run Script]
+[Sample Run Script] (use custom model)
 ```
 python HAAR_Demo/haar_demo.py \
 --video-input ./HAAR_Demo/cctv_demo.mp4 \
---opts MODEL.WEIGHTS ./models/fcpose50.pth
+--opts MODEL.WEIGHTS ./models/mymodel.pth
 ```
 
 <!--
