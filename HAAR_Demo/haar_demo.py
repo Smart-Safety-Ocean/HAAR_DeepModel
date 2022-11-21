@@ -120,13 +120,13 @@ def setup_cfg(args):
     # load config from file and command-line arguments
     cfg = get_cfg()
     if(args.detection_mode == "key-point"):
-        args.config_file = "/media/hongss/T7/HAAR_DeepModel/AdelaiDet/configs/FCPose/R_50_3X.yaml"
+        args.config_file = "../detectron2/configs/COCO-Keypoints/keypoint_rcnn_R_50_FPN_3x.yaml"
         cfg.merge_from_file(args.config_file)
-    elif (args.detection_mode == "FCOS"):
-        args.config_file = "/media/hongss/T7/HAAR_DeepModel/AdelaiDet/configs/FCOS-Detection/MS_R_101_2x.yaml"
+    elif (args.detection_mode == "fasterrcnn"):
+        args.config_file = "../detectron2/configs/COCO-Detection/faster_rcnn_R_50_FPN_3x.yaml"
         cfg.merge_from_file(args.config_file)
-    elif (args.detection_mode == "BoxInst"):
-        args.config_file = "/media/hongss/T7/HAAR_DeepModel/AdelaiDet/configs/BoxInst/MS_R_101_3x.yaml"
+    elif (args.detection_mode == "retinanet"):
+        args.config_file = "../detectron2/configs/COCO-Detection/retinanet_R_50_FPN_3x.yaml"
         cfg.merge_from_file(args.config_file)
     cfg.merge_from_list(args.opts)
     # Set score_threshold for builtin models
@@ -143,14 +143,14 @@ def get_parser():
     parser = argparse.ArgumentParser(description="HAAR Demo")
     parser.add_argument(
         "--config-file",
-        default="/media/hongss/T7/HAAR_DeepModel/AdelaiDet/configs/FCPose/R_50_3X.yaml",
+        default="../detectron2/configs/COCO-Detection/faster_rcnn_R_50_FPN_3x.yaml",
         metavar="FILE",
         help="path to config file",
     )
     parser.add_argument(
         "--detection-mode",
         default="object",
-        help="select detection mode = 'fcos' or 'boxinst' or 'key-point'"
+        help="select detection mode = 'fasterrcnn' or 'retinanet' or 'key-point'"
     )
     parser.add_argument(
         "--video-dirinput",
