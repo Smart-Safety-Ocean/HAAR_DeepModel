@@ -3,6 +3,7 @@
 <a name="readme-top"></a>
 
 
+  <img src="https://user-images.githubusercontent.com/20548632/202991748-a429375c-54bb-4196-9abd-c46df083583d.PNG" alt="LOGO" />
 
 
 <!-- PROJECT SHIELDS -->
@@ -20,18 +21,15 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
+<!--
 [![LinkedIn][linkedin-shield]][linkedin-url]
+-->
 
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="left">
-  <a href="https://github.com/Smart-Safety-Ocean/HAAR_DeepModel">
-    <!--
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-    -->
-  </a>
-<h1 align="left"> HAAR_DeepModel (v.0.5) </h1>
+<!-- PROJECT -->
+<div align="center">
+
+<h1 align="left"> HAAR(Human Abnormal Activity Recognition) DeepModel (v.0.5) </h1>
 
 <h3 align="left">Open Source Algorithm For Detecting Ship Passengers’ Abnormal Behaviors And Fall Accidents</h3>
 
