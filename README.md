@@ -61,6 +61,9 @@
       </ul>
     </li>
     <li>
+      <a href="#requirenment">Requirenments</a></li>
+    </li>
+    <li>
       <a href="#getting-started">Getting Started</a>
       <!-- <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
@@ -91,15 +94,16 @@ We defined activity of ship-passenger. (normal, abnormal) <br>
 [Walking, Lean-railing, Sit-down, Smoking, Move-Over, Standing ... ]
 <!--Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`-->
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Demo Reel of the Model
+1. Walking </br></br><img src="https://user-images.githubusercontent.com/20548632/202956858-87f79ec6-8678-44cf-90f0-28d9a2939ca9.gif" alt="walking-animated" ></br></br>
+2. Move Over #1 </br></br><img src="https://user-images.githubusercontent.com/20548632/202956733-b2cf0a96-8354-414b-a885-b9c3ab036880.gif" alt="moveover1-animated" ></br></br>
+3. Move Over #2 </br></br><img src="https://user-images.githubusercontent.com/20548632/202956823-d871e9d4-8da3-4197-96c0-b430535941fe.gif" alt="moveover2-animated" ></br></br>
+ 
 
-![KakaoTalk_20221121_112926627_03](https://user-images.githubusercontent.com/20548632/202956733-b2cf0a96-8354-414b-a885-b9c3ab036880.gif)
-![KakaoTalk_20221121_112926627_02](https://user-images.githubusercontent.com/20548632/202956776-f4cc6f44-1f6e-4208-83bd-80910bceec4f.gif)
-![KakaoTalk_20221121_112926627_01](https://user-images.githubusercontent.com/20548632/202956823-d871e9d4-8da3-4197-96c0-b430535941fe.gif)
-![KakaoTalk_20221121_112926627](https://user-images.githubusercontent.com/20548632/202956858-87f79ec6-8678-44cf-90f0-28d9a2939ca9.gif)
-
-### Requirements
+  
+<!-- REQUIREMENTS  -->
+## Requirements 
 
 * Cuda, Cudnn : Cuda support GPU Device (We implemented RTX 3090)
 * Detectron 2 
