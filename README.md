@@ -3,6 +3,7 @@
 <a name="readme-top"></a>
 
 
+  <img src="https://user-images.githubusercontent.com/20548632/202991748-a429375c-54bb-4196-9abd-c46df083583d.PNG" alt="LOGO" />
 
 
 <!-- PROJECT SHIELDS -->
@@ -20,41 +21,31 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
+<!--
 [![LinkedIn][linkedin-shield]][linkedin-url]
+-->
 
 
-<!-- PROJECT LOGO -->
-<br />
+<!-- PROJECT -->
 <div align="center">
-  <a href="https://github.com/Smart-Safety-Ocean/HAAR_DeepModel">
-    <!--
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-    -->
-  </a>
-<h1 align="center"> HAAR_DeepModel (v.0.5) </h1>
 
-<h3 align="center">Open Source Algorithm For Detecting Ship Passengers’ Abnormal Behaviors And Fall Accidents</h3>
+<h1 align="left"> HAAR(Human Abnormal Activity Recognition) DeepModel (v.0.5) </h1>
 
-  <p align="center">
-    Preventing accident on ship and alert for help is the goal for the detection algorithm. Prevent more accidents, save more lives. 
+<h3 align="left">Open Source Algorithm For Detecting Ship Passengers’ Abnormal Behaviors And Fall Accidents</h3>
+
+  <p align="left">
+    Preventing accidents on ships and alerting for help is the goal of the detection algorithm. Prevent more accidents, save more lives. 
     <br />
-    <a href="https://github.com/Smart-Safety-Ocean/HAAR_DeepModel"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <!--
-    <a href="https://github.com/Smart-Safety-Ocean/HAAR_DeepModel">View Demo</a>
-    · -->
-    <a href="https://github.com/Smart-Safety-Ocean/HAAR_DeepModel/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/Smart-Safety-Ocean/HAAR_DeepModel/issues">Request Feature</a>
+    
+
   </p>
 </div>
 
-
+<!--
 <p align="center">
   <img src="https://user-images.githubusercontent.com/20548632/193512190-636df804-0869-48a2-a6de-fc220ef0d411.gif" alt="animated" />
 </p>
-
+-->
 
 <!-- ![modelDemoGif](https://user-images.githubusercontent.com/20548632/193512190-636df804-0869-48a2-a6de-fc220ef0d411.gif)-->
 
@@ -68,6 +59,9 @@
       <ul>
         <li><a href="#built-with">Requirenments</a></li>
       </ul>
+    </li>
+    <li>
+      <a href="#requirenment">Requirenments</a></li>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -94,17 +88,22 @@
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 -->
 
-Open Source CCTV based AI algorithm which detects the abnormal behaviors of passengers on the ship to predict the possible accidents and warn the on board sailors. When the CCTV catches the actual accidents, the algorithm will alert the incidents and the current accident location to nearby coast guards in real time in order to increase the rescue rate for the fallen passengers.
+Open Source CCTV-based AI algorithm which detects the abnormal behaviors of passengers on the ship to predict possible accidents and warn the onboard sailors. When the CCTV catches any abnormal behavior, the algorithm will detect the incidents and alert the current accident location to nearby coast guards in real-time to increase the rescue rate for the fallen passengers.
 
 We defined activity of ship-passenger. (normal, abnormal) <br> 
 [Walking, Lean-railing, Sit-down, Smoking, Move-Over, Standing ... ]
 <!--Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`-->
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Demo Reel of the Model
+1. Walking </br></br><img src="https://user-images.githubusercontent.com/20548632/202956858-87f79ec6-8678-44cf-90f0-28d9a2939ca9.gif" alt="walking-animated" ></br></br>
+2. Move Over #1 </br></br><img src="https://user-images.githubusercontent.com/20548632/202956733-b2cf0a96-8354-414b-a885-b9c3ab036880.gif" alt="moveover1-animated" ></br></br>
+3. Move Over #2 </br></br><img src="https://user-images.githubusercontent.com/20548632/202956823-d871e9d4-8da3-4197-96c0-b430535941fe.gif" alt="moveover2-animated" ></br></br>
+ 
 
-
-### Requirements
+  
+<!-- REQUIREMENTS  -->
+## Requirements 
 
 * Cuda, Cudnn : Cuda support GPU Device (We implemented RTX 3090)
 * Detectron 2 
