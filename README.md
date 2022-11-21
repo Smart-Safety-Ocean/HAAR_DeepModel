@@ -25,18 +25,18 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<div align="center">
+<div align="left">
   <a href="https://github.com/Smart-Safety-Ocean/HAAR_DeepModel">
     <!--
     <img src="images/logo.png" alt="Logo" width="80" height="80">
     -->
   </a>
-<h1 align="center"> HAAR_DeepModel (v.0.5) </h1>
+<h1 align="left"> HAAR_DeepModel (v.0.5) </h1>
 
-<h3 align="center">Open Source Algorithm For Detecting Ship Passengers’ Abnormal Behaviors And Fall Accidents</h3>
+<h3 align="left">Open Source Algorithm For Detecting Ship Passengers’ Abnormal Behaviors And Fall Accidents</h3>
 
-  <p align="center">
-    Preventing accident on ship and alert for help is the goal for the detection algorithm. Prevent more accidents, save more lives. 
+  <p align="left">
+    Preventing accidents on ships and alerting for help is the goal of the detection algorithm. Prevent more accidents, save more lives. 
     <br />
     <a href="https://github.com/Smart-Safety-Ocean/HAAR_DeepModel"><strong>Explore the docs »</strong></a>
     <br />
@@ -94,7 +94,7 @@
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 -->
 
-Open Source CCTV based AI algorithm which detects the abnormal behaviors of passengers on the ship to predict the possible accidents and warn the on board sailors. When the CCTV catches the actual accidents, the algorithm will alert the incidents and the current accident location to nearby coast guards in real time in order to increase the rescue rate for the fallen passengers.
+Open Source CCTV-based AI algorithm which detects the abnormal behaviors of passengers on the ship to predict possible accidents and warn the onboard sailors. When the CCTV catches any abnormal behavior, the algorithm will detect the incidents and alert the current accident location to nearby coast guards in real-time to increase the rescue rate for the fallen passengers.
 
 We defined activity of ship-passenger. (normal, abnormal) <br> 
 [Walking, Lean-railing, Sit-down, Smoking, Move-Over, Standing ... ]
@@ -103,6 +103,10 @@ We defined activity of ship-passenger. (normal, abnormal) <br>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+![KakaoTalk_20221121_112926627_03](https://user-images.githubusercontent.com/20548632/202956733-b2cf0a96-8354-414b-a885-b9c3ab036880.gif)
+![KakaoTalk_20221121_112926627_02](https://user-images.githubusercontent.com/20548632/202956776-f4cc6f44-1f6e-4208-83bd-80910bceec4f.gif)
+![KakaoTalk_20221121_112926627_01](https://user-images.githubusercontent.com/20548632/202956823-d871e9d4-8da3-4197-96c0-b430535941fe.gif)
+![KakaoTalk_20221121_112926627](https://user-images.githubusercontent.com/20548632/202956858-87f79ec6-8678-44cf-90f0-28d9a2939ca9.gif)
 
 ### Requirements
 
