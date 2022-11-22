@@ -11,3 +11,17 @@
 | Move over the railing | Step over the railing with his/her feet. |  
 
 
+## Behavior Pattern class names
+
+
+1. sitting on the chair
+2. lean against the railing
+3. walking on the deck
+4. standing on the deck
+5. take a picture
+6. Smoking
+7. talk on the phone
+8. sitting in the chair + lean against the railing
+9. sitting in the chair + walking on the deck
+10. sitting in the chair+ standing on the deck
+11. empty
