@@ -55,10 +55,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Requirenments</a></li>
-      </ul>
+      <a href="#about-the-project">About The Project</a>    
     </li>
     <li>
       <a href="#requirenment">Requirenments</a></li>
@@ -72,7 +69,7 @@
     </li>
     <!-- <li><a href="#usage">Usage</a></li> -->
     <!-- <li><a href="#roadmap">Roadmap</a></li> -->
-    <li><a href="#contributing">Contributing</a></li>
+  <!--  <li><a href="#contributing">Contributing</a></li> -->
     <li><a href="#license">License</a></li>
     <!-- <li><a href="#contact">Contact</a></li> -->
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -93,13 +90,13 @@ Open Source CCTV-based AI algorithm which detects the abnormal behaviors of pass
 We defined activity of ship-passenger. (normal, abnormal) <br> 
 [Walking, Lean-railing, Sit-down, Smoking, Move-Over, Standing ... ]
 <!--Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`-->
-
+If you want to look at the activity of the passengers, check out the lists <a href="https://github.com/Smart-Safety-Ocean/HAAR_DeepModel/blob/main/BehaviorDocument.md">Here</a>
 
 ### Demo Reel of the Model
 1. Walking </br></br><img src="https://user-images.githubusercontent.com/20548632/202956858-87f79ec6-8678-44cf-90f0-28d9a2939ca9.gif" alt="walking-animated" ></br></br>
 2. Move Over #1 </br></br><img src="https://user-images.githubusercontent.com/20548632/202956733-b2cf0a96-8354-414b-a885-b9c3ab036880.gif" alt="moveover1-animated" ></br></br>
 3. Move Over #2 </br></br><img src="https://user-images.githubusercontent.com/20548632/202956823-d871e9d4-8da3-4197-96c0-b430535941fe.gif" alt="moveover2-animated" ></br></br>
- 
+ <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
   
 <!-- REQUIREMENTS  -->
@@ -248,7 +245,7 @@ Project Link: [https://github.com/Smart-Safety-Ocean/HAAR_DeepModel](https://git
 
 * [SSL](https://www.smartsafety.co.kr/)
 * [Dr.Hong](https://github.com/HongDoubleS)
-* ...[]()
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
