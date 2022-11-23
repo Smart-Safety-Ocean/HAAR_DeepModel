@@ -29,7 +29,7 @@
 <!-- PROJECT -->
 <div align="center">
 
-<h1 align="left"> HAAR(Human Abnormal Activity Recognition) DeepModel (v.0.5) </h1>
+<h1 align="left"> HAAR(Human Abnormal Activity Recognition) DeepModel (v.0.9) </h1>
 
 <h3 align="left">Open Source Algorithm For Detecting Ship Passengers’ Abnormal Behaviors And Fall Accidents</h3>
 
